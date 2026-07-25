@@ -94,17 +94,8 @@
     list-style: none;
     font-size: 20px;
     border-bottom: 0.2px solid white;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
     color: white;
 }
-
-.sidebar ul li a:hover {
-    color: yellow;
-}
-
 .sidebar ul li i {
     font-size: 25px;
     color: white;
@@ -118,6 +109,7 @@
 }
 
 .sidebar ul li:hover {
+    color: yellow;
     box-shadow: 0 2px 6px white;
 }
 
@@ -853,7 +845,7 @@ body a {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
 
     .nav-right ul li {
         display: none;
