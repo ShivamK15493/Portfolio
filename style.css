@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 .nav-left {
     margin-left: 1rem;
     width: 11rem;
@@ -21,16 +22,19 @@
     color: white;
     font-weight: 600;
 }
-.logo{
+
+.logo {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
     border: 0.2px solid white;
 }
-.logo img{
+
+.logo img {
     width: 100%;
     border-radius: 50%;
 }
+
 .nav-right {
     display: flex;
     justify-content: center;
@@ -53,18 +57,22 @@
 .nav-right ul li a {
     color: white;
 }
-.nav-right ul li a:hover{
+
+.nav-right ul li a:hover {
     color: yellow;
 }
-.nav-right ul li i{
+
+.nav-right ul li i {
     font-size: 25px;
     cursor: pointer;
     color: white;
 }
-.nav-right ul li i:hover{
+
+.nav-right ul li i:hover {
     font-size: 27px;
 }
-.sidebar{
+
+.sidebar {
     width: 80%;
     position: absolute;
     top: 0;
@@ -74,10 +82,12 @@
     border: 0.2px solid white;
     z-index: 5;
 }
-.sidebar ul{
+
+.sidebar ul {
     padding: 0;
 }
-.sidebar ul li{
+
+.sidebar ul li {
     line-height: 3.75rem;
     cursor: pointer;
     padding-left: 1rem;
@@ -85,33 +95,39 @@
     font-size: 20px;
     border-bottom: 0.2px solid white;
 }
-.sidebar ul li a{
+
+.sidebar ul li a {
     text-decoration: none;
     color: white;
 }
-.sidebar ul li a:hover{
+
+.sidebar ul li a:hover {
     color: yellow;
 }
-.sidebar ul li i{
+
+.sidebar ul li i {
     font-size: 25px;
     color: white;
     background-color: red;
     border-radius: 2px;
     padding: 0.2rem;
 }
-.sidebar ul li i:hover{
+
+.sidebar ul li i:hover {
     font-size: 27px;
 }
-.sidebar ul li:hover{
+
+.sidebar ul li:hover {
     box-shadow: 0 2px 6px white;
 }
-.cross{
+
+.cross {
     display: flex;
     justify-content: right;
     align-items: center;
     line-height: 3rem;
     padding: 0.8rem 0.5rem 0.8rem 0;
-    border: none;  
+    border: none;
 }
 
 
@@ -167,15 +183,17 @@ body a {
     font-weight: bold;
 }
 
-.shivam{
-   display: flex;
-   align-items: center;
+.shivam {
+    display: flex;
+    align-items: center;
 }
-.shivam p{
+
+.shivam p {
     color: yellow;
     font-size: 2rem;
     font-weight: bold;
 }
+
 .developer {
     color: white;
     font-size: 1.5rem;
@@ -246,6 +264,7 @@ body a {
     height: 0.1rem;
     background-color: black;
 }
+
 .aboutmain {
     margin-top: 1rem;
     width: 100%;
@@ -367,27 +386,78 @@ body a {
 }
 
 .htmlscore {
-    width: 93%;
     height: 1rem;
     background-color: yellow;
+    animation: scoreAnimate1;
 }
-
 .cssScore {
-    width: 86%;
     height: 1rem;
     background-color: yellow;
+    animation: scoreAnimate2;
 }
 
 .javascriptscore {
-    width: 78%;
     height: 1rem;
     background-color: yellow;
+    animation: scoreAnimate3;
+}
+.statisticalscore {
+    height: 1rem;
+    background-color: yellow;
+    animation: scoreAnimate4;
 }
 
-.statisticalscore {
-    width: 85%;
-    height: 1rem;
-    background-color: yellow;
+.htmlscore,
+.cssScore,
+.javascriptscore,
+.statisticalscore{
+    animation-duration: 2.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scoreAnimate1{
+
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 93%;
+    }
+}
+
+@keyframes scoreAnimate2{
+
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 86%;
+    }
+}
+
+@keyframes scoreAnimate3{
+
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 78%;
+    }
+}
+
+@keyframes scoreAnimate4{
+
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 85%;
+    }
 }
 
 .aboutme {
@@ -442,6 +512,7 @@ body a {
 .descBox td {
     color: white;
 }
+
 .project {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -527,10 +598,12 @@ body a {
     height: 24rem;
     border: 0.01rem solid white;
 }
-.studentGradeSystem{
+
+.studentGradeSystem {
     overflow: scroll;
 }
-.studentGradeSystem::-webkit-scrollbar{
+
+.studentGradeSystem::-webkit-scrollbar {
     width: 1px;
     height: 1px;
 }
@@ -704,7 +777,8 @@ body a {
     padding-bottom: 1rem;
     text-align: center;
 }
-.bottomBar{
+
+.bottomBar {
     position: fixed;
     bottom: 0;
     margin: 0.5rem;
@@ -721,50 +795,60 @@ body a {
     gap: 1rem;
     z-index: 5;
 }
-.bottomBar span{
+
+.bottomBar span {
     color: black;
     font-size: 17px;
     font-weight: bold;
 }
-.bottomBar i{
+
+.bottomBar i {
     font-size: 25px;
     color: black;
 }
-.bottomBar .click{
+
+.bottomBar .click {
     margin-left: 1rem;
     border-color: black;
 }
-@media (max-width:1650px){
-      
-    #menu{
+
+@media (max-width:1650px) {
+
+    #menu {
         display: none;
     }
-    .sidebar{
+
+    .sidebar {
         width: 50%;
         display: none;
     }
-    .bottomBar{
+
+    .bottomBar {
         display: none;
     }
 }
 
-@media (max-width:600px){
-      
-    .sidebar{
+@media (max-width:600px) {
+
+    .sidebar {
         width: 100%;
     }
-    .nav-left{
+
+    .nav-left {
         font-size: 17px;
         margin-left: 0.3rem;
     }
-    .logo{
+
+    .logo {
         width: 2rem;
         height: 2rem;
     }
-     .bottomBar{
+
+    .bottomBar {
         display: flex;
     }
-    .cl1{
+
+    .cl1 {
         display: none;
     }
 }
@@ -774,12 +858,15 @@ body a {
     .nav-right ul li {
         display: none;
     }
-    #menu{
+
+    #menu {
         display: block;
     }
-     .sidebar{
+
+    .sidebar {
         width: 100%;
     }
+
     .im {
         font-size: 2.5rem;
     }
