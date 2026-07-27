@@ -403,9 +403,10 @@ body a {
 .cssScore,
 .javascriptscore,
 .statisticalscore{
-    animation-duration: 2.2s;
+    animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 @keyframes scoreAnimate1{
@@ -416,6 +417,7 @@ body a {
 
     to {
         width: 93%;
+        background-color: red;
     }
 }
 
@@ -427,6 +429,7 @@ body a {
 
     to {
         width: 86%;
+        background-color: red;
     }
 }
 
@@ -438,6 +441,7 @@ body a {
 
     to {
         width: 78%;
+        background-color: red;
     }
 }
 
@@ -449,6 +453,7 @@ body a {
 
     to {
         width: 85%;
+        background-color: red;
     }
 }
 
