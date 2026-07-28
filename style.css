@@ -96,6 +96,7 @@
     border-bottom: 0.2px solid white;
     color: white;
 }
+
 .sidebar ul li i {
     font-size: 25px;
     color: white;
@@ -182,7 +183,7 @@ body a {
 
 .shivam p {
     color: rgb(30, 220, 5);
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 
@@ -382,6 +383,7 @@ body a {
     background-color: yellow;
     animation: scoreAnimate1;
 }
+
 .cssScore {
     height: 1rem;
     background-color: yellow;
@@ -393,6 +395,7 @@ body a {
     background-color: yellow;
     animation: scoreAnimate3;
 }
+
 .statisticalscore {
     height: 1rem;
     background-color: yellow;
@@ -402,14 +405,14 @@ body a {
 .htmlscore,
 .cssScore,
 .javascriptscore,
-.statisticalscore{
+.statisticalscore {
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-@keyframes scoreAnimate1{
+@keyframes scoreAnimate1 {
 
     from {
         width: 0%;
@@ -421,7 +424,7 @@ body a {
     }
 }
 
-@keyframes scoreAnimate2{
+@keyframes scoreAnimate2 {
 
     from {
         width: 0%;
@@ -433,7 +436,7 @@ body a {
     }
 }
 
-@keyframes scoreAnimate3{
+@keyframes scoreAnimate3 {
 
     from {
         width: 0%;
@@ -445,7 +448,7 @@ body a {
     }
 }
 
-@keyframes scoreAnimate4{
+@keyframes scoreAnimate4 {
 
     from {
         width: 0%;
@@ -729,7 +732,7 @@ body a {
     height: 1.5rem;
 }
 
-.havea {
+.ques {
     color: white;
     font-family: sans-serif;
     font-size: 1.7rem;
@@ -755,6 +758,19 @@ body a {
     font-weight: bold;
     cursor: pointer;
     gap: 0.2rem;
+    animation: sizeAnimate;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes sizeAnimate{
+    form{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.8);
+    }
 }
 
 .click img {
@@ -809,6 +825,35 @@ body a {
     border-color: black;
 }
 
+.floatIcon {
+    position: fixed;
+    right: 60px;
+    bottom: 110px;
+}
+
+.floatIcon img {
+    width: 4.5rem;
+    height: 4.5rem;
+    animation: sizeChange;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0px 4px 16px white;
+    border-radius: 50%;
+}
+@keyframes sizeChange {
+    from {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    to {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+
 @media (max-width:1650px) {
 
     #menu {
@@ -845,7 +890,8 @@ body a {
         display: flex;
     }
 
-    .cl1 {
+    .floatIcon,
+    .clic{
         display: none;
     }
 }
