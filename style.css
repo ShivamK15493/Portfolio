@@ -538,7 +538,7 @@ body a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 6rem;
 }
 
 .faceContents,
@@ -608,16 +608,16 @@ body a {
     height: 1px;
 }
 
-.instagrambox:hover,
 .facebookbox:hover,
+.netflixbox:hover,
 .calculator:hover,
 .studentGradeSystem:hover,
 .Complook:hover,
 .Weather:hover {
     width: 20.02rem;
     height: 24.02rem;
-    border: 0.01rem solid red;
     cursor: pointer;
+    transform: scale(1.04);
 }
 
 .contactme {
@@ -884,6 +884,9 @@ body a {
     .logo {
         width: 2rem;
         height: 2rem;
+    }
+    .projectarea{
+        gap: 3rem;
     }
 
     .bottomBar {
