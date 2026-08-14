@@ -443,7 +443,7 @@ body a {
     }
 
     to {
-        width: 78%;
+        width: 80%;
         background-color: red;
     }
 }
@@ -657,6 +657,7 @@ body a {
 
 .box:hover {
     border: 0.01rem solid rgb(10, 224, 35);
+    transform: scale(0.9);
 }
 
 .boxfont {
