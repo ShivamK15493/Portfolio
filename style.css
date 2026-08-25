@@ -285,8 +285,9 @@ body a {
 
 .aboutintro1 {
     width: 22rem;
-    height: 28rem;
+    height: auto;
     background-color: rgb(13, 202, 86);
+    margin-bottom: 4rem;
 }
 
 .aboutintro2 {
@@ -352,18 +353,14 @@ body a {
     height: 1.7rem;
 }
 
-.skills {
-    width: 100%;
-    color: rgb(109, 109, 109);
-    font-size: 0.9rem;
-    font-weight: bold;
-    font-family: arial;
-    display: flex;
-    justify-content: center;
+.skills p{
+    color: grey;
+    font-size: 17px;
+    margin-bottom: 1rem;
 }
 
 .skilltext {
-    color: grey;
+    color: white;
     font-size: 0.9rem;
     font-family: arial;
     padding-bottom: 0.2rem;
@@ -401,11 +398,17 @@ body a {
     background-color: yellow;
     animation: scoreAnimate4;
 }
+.sqlscore {
+    height: 1rem;
+    background-color: yellow;
+    animation: scoreAnimate5;
+}
 
 .htmlscore,
 .cssScore,
 .javascriptscore,
-.statisticalscore {
+.statisticalscore,
+.sqlscore {
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -456,6 +459,18 @@ body a {
 
     to {
         width: 85%;
+        background-color: red;
+    }
+}
+
+@keyframes scoreAnimate5 {
+
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 70%;
         background-color: red;
     }
 }
@@ -836,6 +851,7 @@ body a {
     width: 4.5rem;
     height: 4.5rem;
     animation: sizeChange;
+    
     animation-duration: 1.2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
