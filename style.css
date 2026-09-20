@@ -197,33 +197,83 @@ body a {
     display: flex;
     gap: 0.3rem;
 }
-
 .linkedin {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 6rem;
-    height: 3rem;
+    height: 2.5rem;
     font-family: sans-serif;
-    background-color: rgb(25, 182, 235);
+    border: 1px solid white;
     border-radius: 1.6rem;
     cursor: pointer;
     color: black;
 }
-
+.linkedin img{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+.linkedinBack{
+    animation: colorAnimate1;
+}
 .instagram {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 6rem;
-    height: 3rem;
+    height: 2.5rem;
     font-family: sans-serif;
-    background-color: rgb(221, 63, 15);
+    border: 1px solid white;
     border-radius: 1.6rem;
     cursor: pointer;
     color: black;
 }
+.instagram img{
+    width: 1.75rem;
+    height: 1.75rem;
+}
+.linkedinBack,
+.instaBack{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.6rem;
+}
+.instaBack{
+    animation: colorAnimate2;
+}
+.linkedinBack:hover,
+.instaBack:hover{
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes colorAnimate1 {
+    from{
+        width: 0%;
+        background-color: rgb(6, 113, 235);
+    }
+    
+    to{
+        width: 100%;
+        background-color: rgb(6, 113, 235);
+    }
+}
 
+@keyframes colorAnimate2 {
+    from{
+        width: 0%;
+        background-color: red;
+    }
+    
+    to{
+        width: 100%;
+        background-color: red;
+    }
+}
 .intro2 img {
     width: 22rem;
     height: 26rem;
