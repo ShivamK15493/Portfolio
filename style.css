@@ -921,7 +921,7 @@ body a {
     }
 }
 
-@media (max-width:1650px) {
+@media (max-width:2050px) {
 
     #menu {
         display: none;
@@ -933,35 +933,6 @@ body a {
     }
 
     .bottomBar {
-        display: none;
-    }
-}
-
-@media (max-width:600px) {
-
-    .sidebar {
-        width: 100%;
-    }
-
-    .nav-left {
-        font-size: 17px;
-        margin-left: 0.3rem;
-    }
-
-    .logo {
-        width: 2rem;
-        height: 2rem;
-    }
-    .projectarea{
-        gap: 3rem;
-    }
-
-    .bottomBar {
-        display: flex;
-    }
-
-    .floatIcon,
-    .clic{
         display: none;
     }
 }
@@ -1000,5 +971,34 @@ body a {
     .intro2 img {
         width: 18rem;
         height: 22rem;
+    }
+}
+
+@media (max-width:600px) {
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .nav-left {
+        font-size: 17px;
+        margin-left: 0.3rem;
+    }
+
+    .logo {
+        width: 2rem;
+        height: 2rem;
+    }
+    .projectarea{
+        gap: 3rem;
+    }
+
+    .bottomBar {
+        display: flex;
+    }
+
+    .floatIcon,
+    .clic{
+        display: none;
     }
 }
