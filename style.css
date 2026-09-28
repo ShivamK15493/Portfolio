@@ -609,6 +609,7 @@ body a {
 .faceContents,
 .netflixContents,
 .calculateContents,
+.todoContents,
 .gradeContents,
 .CompContents,
 .WeatherContents {
@@ -637,6 +638,7 @@ body a {
 .calculatepic,
 .studentGradepic,
 .Complookpic,
+.todolistpic,
 .Weatherpic {
     width: 20rem;
     height: 11.3rem;
@@ -646,6 +648,7 @@ body a {
 .facebookpic img,
 .netflixpic img,
 .calculatepic img,
+.todolistpic img,
 .studentGradepic img,
 .Complookpic img,
 .Weatherpic img {
@@ -656,6 +659,7 @@ body a {
 .netflixbox,
 .facebookbox,
 .calculator,
+.todolist,
 .studentGradeSystem,
 .Complook,
 .Weather {
@@ -676,6 +680,7 @@ body a {
 .facebookbox:hover,
 .netflixbox:hover,
 .calculator:hover,
+.todolist:hover,
 .studentGradeSystem:hover,
 .Complook:hover,
 .Weather:hover {
